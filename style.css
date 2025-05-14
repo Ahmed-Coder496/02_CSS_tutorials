@@ -1,0 +1,12 @@
+
+/* External CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#para1{
+    background-color: rgb(24, 58, 59);
+    color: rgb(255, 0, 38);
+}
