@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigations menues</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .nav-bar {
+            background-color: rgb(11 12 41);
+            height: 75px;
+            border: 5px solid rgb(0 0 0);
+            border-radius: 38px;
+        }
+
+        #logo {
+            width: 50px;
+            margin-left: 15px;
+            float: left;
+        }
+
+        .nav-menu {
+            width: 500px;
+            height: 75px;
+            margin: 0 auto;
+
+        }
+
+        .nav-menu li {
+            width: 125px;
+            list-style: none;
+            height: 75px;
+            margin-top: 25px;
+            float: left;
+            text-align: center;
+        }
+
+        .nav-menu li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-menu li a:hover,
+        .nav-menu li a:active {
+            background-color: white;
+            color: black;
+        }
+
+        .search {
+            float: left;
+            margin-top: -50px;
+            margin-left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 1st Navigstion Menu -->
+    <nav class="nav-bar">
+        <!-- right content -->
+        <a href="#">
+            <img src="./images/BASKETBALL PNG.png" alt="logo" id="logo">
+        </a>
+
+        <!-- ceter content -->
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </div>
+
+        <!-- left content -->
+        <div class="search">
+            <input type="text" placeholder="Search Anything??">
+        </div>
+    </nav>
+
+</body>
+
+</html>
