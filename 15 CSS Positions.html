@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: khaki;
+            border: 15px solid yellow;
+            height: 1000px;
+        }
+        .box{
+            background-color: rgb(202, 38, 38);
+            border: 5px solid rgb(40, 7, 7);
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            display: inline-block;
+        }
+        
+        /* CSS Postions : static , relative , absolute , fixed , sticky. */
+        
+        #box1{
+            /* CSS Postions : static          It is a (Default property) of CSS posotion */
+            /* position: static; */
+            /*top: 10px;*/               /*This is a default property so no change*/
+        } 
+        
+        #box2{
+            /* CSS Postions : relative ;        It change to it's relative element */
+            /* position: relative;
+            top: 10px;
+            right: 10px; */
+        }
+        #box3{
+            /* CSS Postions : absolute ;        It change to it's parent element */
+            /* position: absolute;
+            top: 20px;
+            left: 40px; */
+        }
+        #box4{
+            /* CSS Postions : fixed ;        It fixed to it's point in any condition and it don't move away */
+            /* position: fixed;
+            bottom: 50px;
+            right: 50px; */
+        }
+        #box5{
+            /* CSS Postions : sticky ;        It sticks upward to the piont during scrolling */
+            /* position: sticky;
+            top: 25px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+        <div class="box" id="box5">box5</div>
+    </div>
+</body>
+</html>

@@ -1,14 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display Property</title>
     <style>
-        
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: rgb(232 142 142);
+            width: 85%;
+            border: 5px solid red;
+            margin: 20px auto;
+        }
+
+        h1,
+        p {
+            color: white;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        img {
+            width: 100px;
+            display: block;
+            margin: auto;
+        }
+        footer{
+            width: 85%;
+            margin: 20px auto;
+        }
+        .box{
+            background-color: rgb(56 52 52);
+            border: 5px solid black;
+            width: 23.9%;
+            display: inline-block;
+            margin: auto 4px;
+
+        }
     </style>
 </head>
+
 <body>
-    
+    <header>
+        <img src="./images/BASKETBALL PNG.png" alt="img" class="content">
+        <h1 class="content">This is my Blog. Lorem ipsum dolor sit, amet consect etur adipisicing elit.</h1>
+    </header>
+    <footer>
+        <div class="box">
+            <h1>This is a First Box</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ratione illo ex eos ipsum illum eaque
+                sed vero excepturi adipisci non hic, magni, facilis perspiciatis delectus voluptas. Voluptatum, a
+                recusandae neque sit dolores aliquam!</p>
+        </div>
+        <div class="box">
+            <h1>This is a Second Box</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ratione illo ex eos ipsum illum eaque
+                sed vero excepturi adipisci non hic, magni, facilis perspiciatis delectus voluptas. Voluptatum, a
+                recusandae neque sit dolores aliquam!</p>
+        </div>
+        <div class="box">
+            <h1>This is a Third Box</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ratione illo ex eos ipsum illum eaque
+                sed vero excepturi adipisci non hic, magni, facilis perspiciatis delectus voluptas. Voluptatum, a
+                recusandae neque sit dolores aliquam!</p>
+        </div>
+        <div class="box">
+            <h1>This is a Forth Box</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ratione illo ex eos ipsum illum eaque
+                sed vero excepturi adipisci non hic, magni, facilis perspiciatis delectus voluptas. Voluptatum, a
+                recusandae neque sit dolores aliquam!</p>
+        </div>
+    </footer>
 </body>
+
 </html>
