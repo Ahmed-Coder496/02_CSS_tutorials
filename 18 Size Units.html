@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        /* Size Unit : px vh vw em rem */
+
+        .container {
+            background-color: rgb(239, 157, 142);
+            border: 5px solid red;
+
+            /* Size Unit : px */
+            font-size: 10px;
+            
+            /* Size Unit : vh */
+            height: 100vh;
+
+            /* Size Unit : vw */
+            width: 100vw;
+        }
+
+        .head {
+            background-color: paleturquoise;
+            border: 5px solid skyblue;
+            margin: 20px;
+        }
+
+        #head1 {
+            /* Size Unit : em */
+
+            /* em : font-size multiplied by perent font-size      so font-size computed into 100px */
+            /* font-size: 10em; */
+            /* In padding em : first font-size multiplied by perent font-size than perent font size multiplied by padding value */
+            /* padding: 10em; */
+        }
+
+        #head2 {
+            /* Size Unit : rem */
+
+            /* rem : font-size multiplied by perent font-size      so font-size computed into 160px */
+            /* font-size: 10rem; */
+            /* In padding rem : first font-size multiplied by perent font-size than perent font size multiplied by padding value */
+            /* padding: 10rem; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="head" id="head1">This is First Heading</h1>
+        <h1 class="head" id="head2">This is Second Heading</h1>
+    </div>
+</body>
+
+</html>

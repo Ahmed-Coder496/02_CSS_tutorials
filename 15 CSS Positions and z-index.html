@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Positions</title>
+    <title>CSS Positions & Z-Index</title>
     <style>
         *{
             margin: 0;
@@ -52,8 +52,23 @@
         }
         #box5{
             /* CSS Postions : sticky ;        It sticks upward to the piont during scrolling */
-            /* position: sticky;
+            /* position: relative;
             top: 25px; */
+        }
+
+        /* z-index : z-index only work with position so positions are componssory required */
+        #box6{
+            /* z-index */
+            /* position: relative;
+            top: 25px;
+            z-index: 1;
+            border: 5px solid green; */
+        }
+        #box7{
+            /* z-index */
+            /* position: relative;
+            left: -25px;
+            z-index: 2; */
         }
     </style>
 </head>
@@ -64,6 +79,8 @@
         <div class="box" id="box3">box3</div>
         <div class="box" id="box4">box4</div>
         <div class="box" id="box5">box5</div>
+        <div class="box" id="box6">box6</div>
+        <div class="box" id="box7">box7</div>
     </div>
 </body>
 </html>

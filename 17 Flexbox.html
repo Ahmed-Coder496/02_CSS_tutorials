@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        h1 {
+            width: 270px;
+            margin: auto;
+        }
+
+        .container {
+            /* background-color: tomato; */
+            border: 5px solid red;
+            margin: 5px 0;
+            height: 900px;
+
+            /* Flexbox property */
+            display: flex;
+
+            /* Flexbox properties for parent element */
+
+
+
+
+            /* Flexbox properties for parent element by flex-direction */
+
+            /* Default property of flex-direction is raw */
+            /* flex-direction: row; */
+
+            /* it show's elements in rewerse direction in raw */
+            /* flex-direction: row-reverse; */
+
+            /* it show's elements in column */
+            /* flex-direction: column; */
+
+            /* it show's elements in rewerse direction in column */
+            /* flex-direction: column-reverse; */
+
+
+
+
+            /* Flexbox properties for parent element by flex-wrap */
+
+            /* Default property of flex-wrap is nowrap */
+            /* flex-wrap: nowrap; */
+
+            /* it wraps the elements */
+            /* flex-wrap: wrap; */
+
+            /* it wraps the elements in rewerse */
+            /* flex-wrap: wrap-reverse; */
+
+
+            /* shorthand of flex-direction flex-wrap */
+            /* flex-flow: row-reverse wrap; */
+
+
+
+
+            /* Flexbox properties for parent element by justify-content */
+
+            /* it justify the content in center in horizontly */
+            /* justify-content: center; */
+
+            /* it provide the space to content and remaining space divide equally */
+            /* justify-content: space-between; */
+
+            /* it divide the content space in equall in horizontly */
+            /* justify-content: space-evenly; */
+
+            /* it divide the each content in center for it's div in horizontly */
+            /* justify-content: space-around; */
+
+
+
+
+            /* Flexbox properties for parent element by align-items */
+
+            /* It align items in starts in verticaly and it is a default property of align-items */
+            /* align-items: flex-start; */
+
+            /* It align items in center in verticaly */
+            /* align-items: center; */
+
+            /* It align items in end in verticaly */
+            /* align-items: flex-end; */
+        }
+
+        .box {
+            background-color: rgb(141, 237, 141);
+            border: 5px solid green;
+            height: 150px;
+            width: 150px;
+            margin: 5px 5px;
+        }
+
+
+
+        /* Flexbox properties for each element */
+
+
+        #box1 {
+            /* Flexbox properties for each element by order */
+            /* By this property element goes to the end but value is gretter */
+            order: 2;
+        }
+
+        #box2 {
+            /* Flexbox properties for each element by flex-grow */
+            /* By this property element makes grow */
+            flex-grow: 3;
+        }
+
+        #box3 {
+            /* Flexbox properties for each element by flex-shrink */
+            /* By this property element makes shrink */
+            flex-shrink: 3;
+        }
+        #box4{
+            /* Flexbox properties for each element by flex-basis */
+            /* By this property element gets its default value in row because the flex-direction is row */
+            flex-basis: 455px;
+
+
+            /* shorthand of flex-grow flex-shrink flex-basis */
+            /* flex: 2 2 334px; */
+        }
+        #box5{
+            /* Flexbox properties for each element by align-self */
+
+            /* It align element in starts in verticaly and it is a default property of align-start */
+            /* align-self: start; */
+            /* It align element in center in verticaly and it is a default property of align-center */
+            align-self: center;
+            /* It align element in end in verticaly and it is a default property of align-end */
+            /* align-self: end; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is a Flexbox</h1>
+    <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+        <div class="box" id="box4">box4</div>
+        <div class="box" id="box5">box5</div>
+        <div class="box" id="box6">box6</div>
+    </div>
+</body>
+
+</html>
