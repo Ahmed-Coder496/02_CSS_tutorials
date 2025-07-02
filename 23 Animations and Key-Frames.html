@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and Key-Frames</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            border: 5px solid green;
+            display: flex;
+
+        }
+
+        .box {
+            /* margin: auto; */
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            border: 5px solid red;
+            border-radius: 100%;
+            text-align: center;
+            align-content: center;
+            position: relative;
+
+
+            /* animation */
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: anima 2s ease-in-out 1s infinite forwards;
+            animation: anima 5s ease-in-out 1s infinite reverse;
+            /* animation: anima 2s ease-in-out 1s infinite alternate-reverse; */
+            animation: anima 5s ease-in-out 0s 5 forwards;
+        }
+
+        @keyframes anima {
+
+            /* 1st animation */
+
+            /* 0%{
+                top: 0px;
+                left: 0px;
+            }
+
+            25%{
+                border-style: dashed;
+                border-radius: 0px;
+                top: 250px;
+                left: 0px;
+            }
+            
+            50%{
+                top: 250px;
+                left: 250px;
+            }
+
+            75% {
+                width: 0px;
+                height: 0px;
+                font-size: 0px;
+                color: purple;
+                background-color: red;
+                border: 5px solid black;
+                top: 0px;
+                left: 250px;
+            }
+
+            100% {
+                width: 300px;
+                height: 300px;
+                color: orangered;
+                background-color: rgb(225, 255, 0);
+                border: 5px dotted rgb(96, 0, 250);
+                border-radius: 100%;
+            }  */
+
+
+            /* 2nd animation */
+
+            /* 0%{
+                top: 0px;
+                left: 0px;
+            }
+            10%{
+                top: 250px;
+                left: 0px;
+            }
+            20%{
+                top: 250px;
+                left: 250px;
+            }
+            30%{
+                top: 0px;
+                left: 250px;
+            }
+            40%{
+                top: 0px;
+                left: 0px;
+            } */
+
+
+            /* 3rd animation */
+
+            0% {
+                top: 500px;
+                left: 0px;
+            }
+
+            10% {
+                top: 250px;
+                left: 0px;
+            }
+
+            20% {
+                top: 250px;
+                left: 250px;
+            }
+
+            30% {
+                top: 500px;
+                left: 250px;
+            }
+
+            40% {
+                top: 250px;
+                left: 0px;
+            }
+
+            50% {
+                top: 0px;
+                left: 125px;
+            }
+
+            60% {
+                top: 250px;
+                left: 250px;
+            }
+
+            70% {
+                top: 500px;
+                left: 0px;
+            }
+
+            80% {
+                top: 500px;
+                left: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Log In</div>
+    </div>
+</body>
+
+</html>
